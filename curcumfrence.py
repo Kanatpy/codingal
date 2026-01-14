@@ -1,5 +1,6 @@
-ratio = float(input("Enter the ratio of your circle "))
-ratio_x_2 = (ratio * 2)
-Pi = 3.14159
-curcumfrence = (Pi* ratio_x_2)
-print(curcumfrence)
+def curcumference(a,b):
+    a = a*2
+    print(a*b)
+ratio = int(input("ratio:"))
+pi=3.14159
+curcumference(ratio,pi)
