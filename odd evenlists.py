@@ -1,16 +1,15 @@
 list1 = []
-list2 = []
 num1,num2 = int(input("enter num1: ")),int(input("enter num2: "))
 
 num = num1 + 1
 layer =1
 while num <= num2:
-    if num % 2 == 0:
-        list1.insert(layer,num)
-    else:
-        list2.insert(layer,num)
+    list1.insert(layer,num)
 
     layer +=1
     num+=1
-print("evens:",list1)
-print("odds:",list2)
+
+odd_list = [x for x in list1 if x%2!=0]
+even_list =[y for y in list1 if y%2==0]
+print("evens:",even_list)
+print("odds:",odd_list)
