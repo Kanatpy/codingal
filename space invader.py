@@ -3,15 +3,6 @@ import pygame
 import random
 import sys
 
-class button(pygame.sprite.Sprite):
-    def __init__(self,x,y):
-        self.x = x
-        self.y = y
-        self.buttonImg1 = pygame.transform.scale_by(pygame.image.load("start button1.png"),4)
-        self.buttonImg2 = pygame.transform.scale_by(pygame.image.load("start button2.png"),4)
-    def check_for_collision(self):
-        if 
-
 
 screen_width = 800
 screen_height = 500
