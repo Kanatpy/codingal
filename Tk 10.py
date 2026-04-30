@@ -1,0 +1,27 @@
+from tkinter import *
+
+root = Tk()
+root.geometry("300x300")
+
+def convert():
+    p1 = p.get()
+    t1 = t.get()
+    i1 = i.get()
+    s_i1 = float(p1)*float(t1)*float(i1)
+    simple_interest= Label(root,text=s_i1)
+    simple_interest.pack()
+p = Entry()
+t = Entry()
+i = Entry()
+p_label = Label(text="principal amount")
+t_label = Label(text="time period")
+i_label = Label(text="interest rate")
+convert_button = Button(text="Convert",command=convert)
+p_label.pack()
+t_label.pack()
+i_label.pack()
+p.pack()
+t.pack()
+i.pack()
+convert_button.pack()
+root.mainloop()
